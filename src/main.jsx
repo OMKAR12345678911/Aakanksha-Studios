@@ -4,10 +4,11 @@ import { createBrowserRouter, RouterProvider } from 'react-router'
 import App from './App.jsx'
 import Login from './Components/Login.jsx' 
 import Service from "./Components/Services.jsx"
-
+import Gallary from './Components/Gallary.jsx'
 import Aboutus from './Components/Aboutus.jsx'
 import Contactus from './Components/Contactus.jsx'
 import Dashboard from './Components/Dashboard.jsx'
+import Pricing from './Components/pricing.jsx'
 import './index.css' 
 const router = createBrowserRouter([
   {
@@ -38,6 +39,16 @@ const router = createBrowserRouter([
          {
         path:"/",
         element:<Dashboard />,
+      },
+
+      {
+        path:"/galary",
+        element:<Gallary/>,
+      },
+
+      {
+        path:"/pricing",
+        element:<Pricing/>,
       },
 
     ],

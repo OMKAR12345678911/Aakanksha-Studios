@@ -1,2 +1,18 @@
 @import "tailwindcss";
 
+
+@font-face {
+    font-family: "Poppins";
+    src: url("fonts/Poppins-SemiBold.woff2") format("woff2");
+    font-weight: 600;
+    font-style: normal;
+}
+
+.badge {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+}
+
