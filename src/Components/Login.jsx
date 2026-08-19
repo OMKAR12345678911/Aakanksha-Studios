@@ -1,26 +1,19 @@
 import React, { useSyncExternalStore } from 'react';
 import PageTransition from './PageTransition';
-
-// 1. Export the login status variable directly
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGoogle, faGoogleScholar } from '@fortawesome/free-brands-svg-icons';
 export let isLoggedInValue = false; 
-
-// 2. Setup an internal tracking array for external files to listen to updates
 const listeners = new Set();
-
-// 3. Export a function that updates the variable and alerts listeners
 export const setLoginStatus = (status) => {
   isLoggedInValue = status;
   listeners.forEach((callback) => callback());
 };
-
-// 4. Export a function to allow other files to subscribe to state changes
 export const subscribeToLogin = (callback) => {
   listeners.add(callback);
   return () => listeners.delete(callback); // Cleanup function
 };
-
 const Login = () => {
-  // 5. BRIDGE: Force React to listen to your external subscription
+ 
   const isLoggedIn = useSyncExternalStore(
     subscribeToLogin, 
     () => isLoggedInValue
@@ -29,14 +22,12 @@ const Login = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     
-    // Grab input text safely
+   
     const emailInput = document.getElementById("Email");
     const emailValue = emailInput ? emailInput.value : "";
-    
-    // Update global state (This triggers the useSyncExternalStore hook to redraw the UI)
     setLoginStatus(true); 
     
-    // Inject the text right after React finishes building the new screen
+    
     setTimeout(() => {
       const displayTarget = document.getElementById("uremail");
       if (displayTarget) {
@@ -61,9 +52,13 @@ const Login = () => {
             <label className='block font-bold text-xl text-black mb-1'>Password</label>
             <input type='password' placeholder='Enter your password' className='w-full bg-gray-600 border-2 border-amber-950 rounded-2xl p-2 text-center text-white focus:outline-none' id="Password" required/>
           </div>
-
+          
           <button type="submit" className='w-full rounded-2xl bg-black font-bold text-2xl text-white text-center p-2 cursor-pointer'>
             LOGIN
+          </button>
+          <button className='bg-white rounded-4xl border-2 border-black p-2 m-4'>
+            <FontAwesomeIcon icon={faGoogle}/>
+            Login With Google
           </button>
         </form>
       </div>

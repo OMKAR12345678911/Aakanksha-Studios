@@ -1,1 +1,24 @@
 @import "tailwindcss";
+html, body {
+  background-color: #121212; /* Replace with your application's dark or primary color */
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  /* Prevents the white background stretch effect when overscrolling on mobile Safari/Chrome */
+  overscroll-behavior: none; 
+}
+
+#root {
+  min-height: 100vh;
+  background-color: #121212;
+}
+
+html {
+  /* Prevents Safari and Chrome from automatically adjusting text scale */
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  
+  /* Disables multi-finger trackpad or touchscreen pinch gestures on modern Windows/Mac PCs */
+  touch-action: none; 
+}

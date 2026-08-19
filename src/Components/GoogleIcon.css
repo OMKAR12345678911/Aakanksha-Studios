@@ -1,0 +1,16 @@
+.react-google-color {
+  background: linear-gradient(
+    135deg, 
+    #4285f4 0% 25%, 
+    #ea4335 25% 50%, 
+    #fbbc05 50% 75%, 
+    #34a853 75% 100%
+  );
+  /* Trims the background gradient exactly to the shape of the icon */
+  background-clip: text;
+  -webkit-background-clip: text;
+  
+  /* Hides the default black color of the icon */
+  color: transparent !important;
+  fill: transparent;
+}

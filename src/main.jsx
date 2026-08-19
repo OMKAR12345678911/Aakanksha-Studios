@@ -54,6 +54,28 @@ const router = createBrowserRouter([
     ],
   },
 ])
+// 🚫 BLOCK DESKTOP PC ZOOM & THE PLUS "+" KEYS
+window.addEventListener('keydown', (e) => {
+  // 1. Block Control/Command combinations (Ctrl +, Ctrl -, Ctrl 0)
+  if (
+    (e.ctrlKey || e.metaKey) && 
+    (e.key === '=' || e.key === '-' || e.key === '0' || e.key === '+')
+  ) {
+    e.preventDefault();
+  }
+
+  // 2. Block the independent Plus "+" keys completely (even without Ctrl)
+  if (e.key === '+' || e.code === 'NumpadAdd' || e.key === '=' || e.key==='Scroll') {
+    e.preventDefault();
+  }
+});
+
+window.addEventListener('wheel', (e) => {
+  if (e.ctrlKey || e.metaKey) {
+    e.preventDefault(); // This kills the browser zoom action completely
+  }
+}, { passive: false });
+
 
 // CRUCIAL MISSING STEP: Tell React to mount your router configuration to the HTML root
 ReactDOM.createRoot(document.getElementById('root')).render(
