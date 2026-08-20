@@ -15,9 +15,9 @@ A modern, responsive web application designed for a photography studio. This dig
 | **Vite** | Fast local development server and build tool |
 | **Tailwind CSS** | Utility-first CSS framework for custom styling |
 | **JavaScript (ES6+)** | Frontend logic and state management |
-| **Mango DB(Coming Soon)| Backend database|
-|**Express Javascript(Coming Soon)|Server Side Code|
-|**Node javascript(Coming Soon)|Backend Server|
+| **Mango DB(Coming Soon)**| Backend database|
+|**Express Javascript(Coming Soon)**|Server Side Code|
+|**Node javascript(Coming Soon)**|Backend Server|
 
 ---
 ## 📦 Getting Started
