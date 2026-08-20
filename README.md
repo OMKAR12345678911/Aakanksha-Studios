@@ -29,3 +29,4 @@ Ensure you have the following installed on your machine:
 2. **Install Dependencies:**
    ```bash 
 node init
+node init
