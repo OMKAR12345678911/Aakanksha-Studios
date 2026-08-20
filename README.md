@@ -15,6 +15,9 @@ A modern, responsive web application designed for a photography studio. This dig
 | **Vite** | Fast local development server and build tool |
 | **Tailwind CSS** | Utility-first CSS framework for custom styling |
 | **JavaScript (ES6+)** | Frontend logic and state management |
+| **Mango DB(Coming Soon)**| Backend database|
+|**Express Javascript(Coming Soon)**|Server Side Code|
+|**Node javascript(Coming Soon)**|Backend Server|
 
 ---
 ## 📦 Getting Started
@@ -24,5 +27,8 @@ Ensure you have the following installed on your machine:
 * [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 ### Local Setup
 1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/OMKAR12345678911/Aakanksha-Studios.git](https://github.com/OMKAR12345678911/Aakanksha-Studios.git)
+   ```bash git clone url
+   git clone https://github.com/OMKAR12345678911/Aakanksha-Studios.git
+2. **Install Dependencies:**
+   ```bash node init
+    node init
