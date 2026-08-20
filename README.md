@@ -24,7 +24,7 @@ Ensure you have the following installed on your machine:
 * [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
 ### Local Setup
 1. **Clone the repository:**
-   ```bash[(git clone url)]
+   ```bash [(git clone url)]
    git clone
 2. **Install Dependencies:**
    ```bash [(node init)]
