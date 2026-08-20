@@ -25,6 +25,6 @@ Ensure you have the following installed on your machine:
 ### Local Setup
 1. **Clone the repository:**
    ```bash [(git clone url)]
-   git clone
+   git clone.
 2. **Install Dependencies:**
    ```bash [(node init)]
