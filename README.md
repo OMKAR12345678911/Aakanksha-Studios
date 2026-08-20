@@ -27,6 +27,5 @@ Ensure you have the following installed on your machine:
    ```bash git clone url
    git clone https://github.com/OMKAR12345678911/Aakanksha-Studios.git
 2. **Install Dependencies:**
-   ```bash 
-node init
-node init
+   ```bash node init
+    node init
