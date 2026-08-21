@@ -10,10 +10,12 @@ import Contactus from './Components/Contactus.jsx'
 import Dashboard from './Components/Dashboard.jsx'
 import Pricing from './Components/pricing.jsx'
 import './index.css' 
+import PageNotFound from './pagenotfound.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />, 
+    element: <App />,
+    errorElement:<PageNotFound/>, 
     children: [
       {
         path: "/login", 
@@ -54,6 +56,8 @@ const router = createBrowserRouter([
     ],
   },
 ])
+
+
 // 🚫 BLOCK DESKTOP PC ZOOM & THE PLUS "+" KEYS
 window.addEventListener('keydown', (e) => {
   // 1. Block Control/Command combinations (Ctrl +, Ctrl -, Ctrl 0)
