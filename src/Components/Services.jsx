@@ -4,6 +4,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser } from '@fortawesome/free-solid-svg-icons'
 import { faCamera } from '@fortawesome/free-solid-svg-icons'
 import { faUserGroup } from '@fortawesome/free-solid-svg-icons'
+import passport from '../assets/passport.png'
+import family from '../assets/family.png'
+import baby from '../assets/baby.png'
+import portrait from '../assets/portrait.png'
 const Services = () => {
   return (
     <PageTransition>
@@ -47,7 +51,7 @@ const Services = () => {
         </ul>
 
         <img
-          src="src/assets/passport.png"
+          src={passport}
           alt="Passport illustration"
           className="h-28 w-28 object-contain -rotate-6 transition-transform duration-300 group-hover:rotate-0"
         />
@@ -82,7 +86,7 @@ const Services = () => {
         </p>
 
         <img
-          src="src/assets/portrait.png"
+          src={portrait}
           alt="Portrait illustration"
           className="h-28 w-28 object-contain transition-transform duration-300 group-hover:scale-105"
         />
@@ -116,7 +120,7 @@ const Services = () => {
         </p>
 
         <img
-          src="src/assets/family.png"
+          src={family}
           alt="Portrait illustration"
           className="h-35 w-35 md:20 md:20 object-contain transition-transform duration-300 group-hover:scale-105"
         />
@@ -150,7 +154,7 @@ const Services = () => {
         </p>
 
         <img
-          src="src/assets/baby.png"
+          src={baby}
           alt="Portrait illustration"
           className="h-35 w-50 md:20 md:20 object-contain transition-transform duration-300 group-hover:scale-105"
         />

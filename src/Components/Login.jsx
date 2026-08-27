@@ -56,7 +56,7 @@ const Login = () => {
           <button type="submit" className='w-full rounded-2xl bg-black font-bold text-2xl text-white text-center p-2 cursor-pointer'>
             LOGIN
           </button>
-          <button className='bg-white rounded-4xl border-2 border-black p-2 m-4'>
+          <button className='bg-white rounded-4xl border-2 border-black p-2 m-4 text-black'>
             <FontAwesomeIcon icon={faGoogle}/>
             Login With Google
           </button>
@@ -64,19 +64,7 @@ const Login = () => {
       </div>
     </PageTransition>
     );
-  } else {
-
-    return (
-      <PageTransition>
-      <div className='w-full max-w-sm p-6 mx-auto bg-gray-800 rounded-2xl text-center shadow-xl'>
-        <h1 className='font-extrabold text-4xl text-white mb-4'>Your Email:</h1>
-        <h1 id="uremail" className='text-xl text-amber-400 font-semibold break-all'></h1>
-      </div>
-      </PageTransition>
-    );
-    
-  }
-  
+  } 
 };
 
 export default Login;

@@ -4,6 +4,7 @@ import PageTransition from '../Components/PageTransition';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCamera, faBolt, faImage } from '@fortawesome/free-solid-svg-icons';
 import { faCalendar } from '@fortawesome/free-regular-svg-icons';
+import backgroundimg from '../assets/bg.jpg';
 
 const Dashboard = () => {
   return (
@@ -18,7 +19,7 @@ const Dashboard = () => {
         </h3>
 
         {/* Heading 1 */}
-        <h1 className='absolute top-[35%] md:top-[25rem] left-1/2 md:left-60 -translate-x-2/4 -translate-y-1/4 text-center font-bold z-50 text-3xl sm:text-4xl md:text-4xl text-white whitespace-nowrap opacity-100'>
+        <h1 className='absolute top-[35%] md:top-[25rem] left-1/2 md:left-60 -translate-x-2/4 md:translate-y-9/4 -translate-y-2/4 text-center font-bold z-50 text-3xl sm:text-4xl md:text-4xl text-white whitespace-nowrap opacity-100'>
           CAPTURING MOMENTS,
         </h1>
 
@@ -63,7 +64,7 @@ const Dashboard = () => {
 
         {/* Background Image */}
         <img 
-          src='src/assets/bg.jpg' 
+          src={backgroundimg}
           className='opacity-55 w-screen h-screen md:h-full object-cover md:object-fill' 
           draggable="false"
           alt="Background"

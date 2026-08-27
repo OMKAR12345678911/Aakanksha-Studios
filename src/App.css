@@ -20,5 +20,31 @@ html {
   text-size-adjust: 100%;
   
   /* Disables multi-finger trackpad or touchscreen pinch gestures on modern Windows/Mac PCs */
-  touch-action: none; 
+  touch-action: pan-y;
+}
+
+@utility card{
+@apply flex;
+@apply w-full;
+@apply items-center;
+@apply justify-between;
+@apply border-t;
+@apple border-amber-500/20;
+@apply pt-4;
+@apply text-lg;
+@apply font-medium;
+@apply text-amber-300;
+@apply transition-colors;
+@apply hover:text-amber-200;
+
+
+
+}
+
+@utility card_text{
+@apply text-base;
+@apply font-light;
+@apply leading-relaxed;
+@apply text-zinc-300;
+
 }
