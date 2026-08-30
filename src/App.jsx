@@ -27,7 +27,7 @@ function App() {
       <Navbar />
       
       {/* 3. Main layout container wrapper */}
-      <div className='flex items-center justify-center min-h-[calc(100vh-64px)] from-purple-500 to-indigo-500'>
+      <div className='flex items-center justify-center min-h-[calc(100svh-5rem)] from-purple-500 to-indigo-500'>
         <main className="w-full">
           <Outlet />
         </main>

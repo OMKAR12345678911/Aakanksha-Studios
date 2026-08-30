@@ -10,7 +10,7 @@ const Dashboard = () => {
   return (
     <PageTransition>
       {/* Container */}
-      <div className='bg-black w-full min-h-[100svh] text-center justify-items-start z-10 align-top relative overflow-y-auto overflow-x-hidden'>
+      <div className='bg-black w-full min-h-[100svh] text-center justify-items-start z-10 align-top relative overflow-x-hidden md:h-[calc(100svh-5rem)] md:min-h-0 md:overflow-hidden'>
       
         {/* Tagline Badge */}
         <h3 className='px-6 py-2 font-bold text-amber-50 border-2 border-amber-200 rounded-2xl z-10 absolute left-1/2 -translate-x-1/2 top-10 md:top-auto md:left-auto md:translate-x-0 ml-0 mt-0 md:ml-5 md:mt-5 backdrop-blur-xl bg-black/50 whitespace-nowrap text-sm sm:text-base'>
@@ -19,7 +19,7 @@ const Dashboard = () => {
         </h3>
 
         {/* Heading 1 */}
-        <div className="absolute top-1/2 left-1/2 md:left-15 -translate-x-1/2 -translate-y-1/2 md:translate-x-0 z-50 flex flex-col items-center md:items-start gap-2 md:gap-4 drop-shadow-lg w-full md:w-auto text-center md:text-left px-4">
+        <div className="absolute top-1/2 left-1/2 md:top-[32%] -translate-x-1/2 -translate-y-1/2 z-50 flex flex-col items-center gap-2 md:gap-4 drop-shadow-lg w-full md:w-auto text-center px-4">
   {/* Heading 1 */}
   <h1 
     className="text-[clamp(1.55rem,5.5vw,3.75rem)] md:text-[clamp(2.55rem,5.5vw,2.75rem)] text-white whitespace-nowrap leading-none" 
@@ -39,12 +39,12 @@ const Dashboard = () => {
 
         
         {/* Description Paragraph */}
-        <p className='text-lg sm:text-xl md:text-2xl absolute text-center md:text-left top-[50%] md:top-[40rem] opacity-100 left-1/2 md:left-10 -translate-x-2/4 md:translate-x-0 text-amber-100/75 z-50 md:truncate w-[90%] md:w-auto max-w-xs sm:max-w-xl md:max-w-5xl px-4 md:px-0'>
+        <p className='text-lg sm:text-xl md:text-2xl absolute text-center top-[50%] md:top-[53%] opacity-100 left-1/2 -translate-x-2/4 text-amber-100/75 z-50 w-[90%] max-w-xs sm:max-w-xl md:max-w-5xl px-4'>
           <br/><br/>Professional Indoor Studio Photography for every <br className="hidden md:inline" /> precious moments of your life
         </p>
 
         {/* Action Buttons Container (Maintained Position) */}
-        <div className="absolute left-1/2 -translate-x-1/2 top-[75%] md:top-[50rem] z-50 w-11/12 max-w-2xl md:max-w-none md:w-auto md:left-10 md:translate-x-0 grid grid-cols-2 md:grid-cols-3 gap-2.5 sm:gap-3">
+        <div className="absolute left-1/2 -translate-x-1/2 top-[75%] md:top-[66%] z-50 w-11/12 max-w-2xl md:max-w-4xl grid grid-cols-2 md:grid-cols-3 gap-2.5 sm:gap-3">
           
           <button type="button" className="group flex items-center justify-center gap-2 px-3 py-2.5 sm:px-4 sm:py-3 bg-black/60 border border-amber-500 rounded-xl text-amber-50 text-[11px] sm:text-xs md:text-sm font-medium tracking-wide transition-all duration-200 hover:bg-amber-400 hover:text-black hover:scale-[1.02] shadow-lg">
             <span>PROFESSIONAL QUALITY</span>
