@@ -10,12 +10,7 @@ const Dashboard = () => {
   return (
     <PageTransition>
       {/* Container */}
-      <div
-        className='min-h-[100svh] w-full text-center justify-items-start z-10 align-top relative overflow-y-auto overflow-x-hidden bg-center bg-cover bg-no-repeat'
-        style={{
-          backgroundImage: `linear-gradient(rgb(0 0 0 / 45%), rgb(0 0 0 / 45%)), url(${backgroundimg})`,
-        }}
-      >
+      <div className='bg-black w-full min-h-[100svh] text-center justify-items-start z-10 align-top relative overflow-y-auto overflow-x-hidden'>
       
         {/* Tagline Badge */}
         <h3 className='px-6 py-2 font-bold text-amber-50 border-2 border-amber-200 rounded-2xl z-10 absolute left-1/2 -translate-x-1/2 top-10 md:top-auto md:left-auto md:translate-x-0 ml-0 mt-0 md:ml-5 md:mt-5 backdrop-blur-xl bg-black/50 whitespace-nowrap text-sm sm:text-base'>
@@ -77,6 +72,13 @@ const Dashboard = () => {
 
         </div>
 
+        {/* Background Image */}
+        <img 
+          src={backgroundimg}
+          className='absolute inset-0 z-0 h-full w-full object-cover opacity-55' 
+          draggable="false"
+          alt="Background"
+        />
       </div>
     </PageTransition>
   );
