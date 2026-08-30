@@ -44,7 +44,7 @@ const Dashboard = () => {
         </p>
 
         {/* Action Buttons Container (Maintained Position) */}
-        <div className="absolute left-1/2 -translate-x-1/2 top-[75%] md:top-[66%] z-50 w-11/12 max-w-2xl md:max-w-4xl grid grid-cols-2 md:grid-cols-3 gap-2.5 sm:gap-3">
+        <div className="absolute left-1/2 -translate-x-1/2 top-[75%] md:top-[80%] z-50 w-11/12 max-w-2xl md:max-w-6xl grid grid-cols-2 md:grid-cols-3 gap-2.5 sm:gap-3">
           
           <button type="button" className="group flex items-center justify-center gap-2 px-3 py-2.5 sm:px-4 sm:py-3 bg-black/60 border border-amber-500 rounded-xl text-amber-50 text-[11px] sm:text-xs md:text-sm font-medium tracking-wide transition-all duration-200 hover:bg-amber-400 hover:text-black hover:scale-[1.02] shadow-lg">
             <span>PROFESSIONAL QUALITY</span>
