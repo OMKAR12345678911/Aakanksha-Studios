@@ -1,14 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCamera, faCheck, faChild, faIdCard, faUsers } from '@fortawesome/free-solid-svg-icons'
 import PageTransition from './PageTransition'
-const pricing = () => {
-  
-  return (<PageTransition>
-    <div>
-      <h1>Pricing</h1>
-    </div>
-    </PageTransition>
-    
-  )
-}
 
-export default pricing
+const packages = [
+  { icon: faIdCard, title: 'Passport photographs', label: 'Fast studio service', description: 'Professional document photographs with the right framing and a quick turnaround.', features: ['Passport, visa, PAN & Aadhaar formats', 'Ready in approximately 10 minutes', 'Clean, professional finishing'] },
+  { icon: faCamera, title: 'Portrait session', label: 'Personal & professional', description: 'A relaxed indoor session for personal portraits, portfolios, and professional profiles.', features: ['Guided posing and studio lighting', 'Suitable for individuals and branding', 'Edited final selections'] },
+  { icon: faUsers, title: 'Family session', label: 'Together, beautifully', description: 'Thoughtfully composed photographs that capture the connection between your favourite people.', features: ['Comfortable studio experience', 'Ideal for families and celebrations', 'Timeless group portraits'] },
+  { icon: faChild, title: 'Baby photography', label: 'Gentle & joyful', description: 'A patient, caring session designed around your little one’s comfort and personality.', features: ['Baby-friendly indoor setup', 'Time to settle and play', 'Heartwarming keepsake portraits'] },
+]
+
+const Pricing = () => <PageTransition><section className="w-full max-w-6xl px-5 py-10 sm:px-8 lg:py-16"><div className="mx-auto max-w-2xl text-center"><p className="mb-3 text-sm font-semibold tracking-[0.24em] text-amber-400">PRICING</p><h1 className="text-4xl font-semibold text-amber-50 sm:text-5xl">Photography made for your moment.</h1><p className="mt-4 text-base leading-7 text-zinc-300 sm:text-lg">Every session is shaped around your requirements. Get in touch for current pricing, availability, and a package that fits your occasion.</p></div><div className="mt-10 grid gap-5 md:grid-cols-2">{packages.map((item) => <article key={item.title} className="group flex flex-col rounded-3xl border border-amber-500/25 bg-neutral-900/70 p-6 transition duration-300 hover:-translate-y-1 hover:border-amber-400 hover:shadow-xl hover:shadow-amber-500/10"><div className="flex items-start justify-between gap-4"><div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl border border-amber-500/30 bg-amber-950 text-amber-300 transition group-hover:bg-amber-400 group-hover:text-black"><FontAwesomeIcon icon={item.icon} /></div><span className="rounded-full border border-amber-500/25 px-3 py-1 text-xs font-medium text-amber-200">{item.label}</span></div><h2 className="mt-5 text-2xl font-semibold text-amber-50">{item.title}</h2><p className="mt-3 min-h-14 leading-7 text-zinc-400">{item.description}</p><ul className="my-6 space-y-3 border-y border-amber-500/15 py-5 text-sm text-amber-100/90">{item.features.map((feature) => <li key={feature} className="flex items-center gap-3"><FontAwesomeIcon icon={faCheck} className="text-xs text-amber-400" />{feature}</li>)}</ul><Link to="/contactus" className="mt-auto flex items-center justify-between font-medium text-amber-300 transition hover:text-amber-200"><span>REQUEST A QUOTE</span><span className="text-xl transition-transform group-hover:translate-x-1">→</span></Link></article>)}</div><div className="mt-6 rounded-2xl border border-amber-500/25 bg-amber-950/25 px-6 py-5 text-center text-sm leading-6 text-amber-100/80">Need something different? We also help with custom requirements and special occasions. <Link to="/contactus" className="font-semibold text-amber-300 underline decoration-amber-400/50 underline-offset-4 hover:text-amber-200">Tell us what you have in mind.</Link></div></section></PageTransition>
+
+export default Pricing

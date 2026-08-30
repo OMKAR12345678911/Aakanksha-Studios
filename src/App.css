@@ -48,3 +48,11 @@ html {
 @apply text-zinc-300;
 
 }
+
+@font-face {
+  font-family: 'Headstyle';
+  src: url('./assets/fonts/Headstyle.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

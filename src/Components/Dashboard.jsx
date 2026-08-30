@@ -19,14 +19,24 @@ const Dashboard = () => {
         </h3>
 
         {/* Heading 1 */}
-        <h1 className='absolute top-[35%] md:top-[25rem] left-1/2 md:left-60 -translate-x-2/4 md:translate-y-9/4 -translate-y-2/4 text-center font-bold z-50 text-3xl sm:text-4xl md:text-4xl text-white whitespace-nowrap opacity-100'>
-          CAPTURING MOMENTS,
-        </h1>
+        <div className="absolute top-1/2 left-1/2 md:left-15 -translate-x-1/2 -translate-y-1/2 md:translate-x-0 z-50 flex flex-col items-center md:items-start gap-2 md:gap-4 drop-shadow-lg w-full md:w-auto text-center md:text-left px-4">
+  {/* Heading 1 */}
+  <h1 
+    className="text-[clamp(1.55rem,5.5vw,3.75rem)] md:text-[clamp(2.55rem,5.5vw,2.75rem)] text-white whitespace-nowrap leading-none" 
+    style={{ fontFamily: 'headstyle' }}
+  > 
+    CAPTURING MOMENTS, 
+  </h1> 
+  
+  {/* Heading 2 */} 
+  <h1 
+    className="text-amber-400 text-[clamp(1.55rem,5.5vw,2.75rem)] whitespace-nowrap leading-none" 
+    style={{ fontFamily: 'headstyle' }}
+  > 
+    CREATING MEMORIES, 
+  </h1>
+</div>
 
-        {/* Heading 2 */}
-        <h1 className='absolute top-[45%] md:top-1/2 left-1/2 md:left-60 mt-0 -translate-x-2/4 -translate-y-9/4 text-center md:text-left pt-1 text-amber-400 text-3xl sm:text-4xl md:text-4xl whitespace-nowrap z-50 font-extralight font-[Apple Chancery]'>
-          CREATING MEMORIES,<br/><br/>
-        </h1>
         
         {/* Description Paragraph */}
         <p className='text-lg sm:text-xl md:text-2xl absolute text-center md:text-left top-[50%] md:top-[40rem] opacity-100 left-1/2 md:left-10 -translate-x-2/4 md:translate-x-0 text-amber-100/75 z-50 md:truncate w-[90%] md:w-auto max-w-xs sm:max-w-xl md:max-w-5xl px-4 md:px-0'>
