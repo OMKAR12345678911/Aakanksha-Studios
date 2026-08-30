@@ -13,7 +13,7 @@ const Dashboard = () => {
       <div className='bg-black w-full min-h-[100svh] text-center justify-items-start z-10 align-top relative overflow-x-hidden md:h-[calc(100svh-5rem)] md:min-h-0 md:overflow-hidden'>
       
         {/* Tagline Badge */}
-        <h3 className='absolute top-10 left-5 z-10 flex items-center whitespace-nowrap border-2 border-amber-200 bg-black/50 px-6 py-2 text-sm font-bold text-amber-50 backdrop-blur-xl sm:text-base rounded-4xl'>
+        <h3 className='px-6 py-2 font-bold text-amber-50 border-2 border-amber-200 rounded-2xl z-10 absolute left-1/2 -translate-x-1/2 top-10 md:top-auto md:left-auto md:translate-x-0 ml-0 mt-0 md:ml-5 md:mt-5 backdrop-blur-xl bg-black/50 whitespace-nowrap text-sm sm:text-base'>
           <span className='mr-2'>⚡</span>
           Passport Photo In 10 mins
         </h3>
